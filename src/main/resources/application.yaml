@@ -12,3 +12,9 @@ spring:
       ddl-auto: update
 server:
   port: ${PORT}
+
+jwt:
+  secret:
+    string: ${JWT_SECRET}
+  expiration:
+    time: ${JWT_EXPIRATION_TIME}
